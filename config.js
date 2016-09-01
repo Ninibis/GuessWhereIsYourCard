@@ -1,0 +1,1 @@
+angular.bootstrap(document.body, [app.name]);

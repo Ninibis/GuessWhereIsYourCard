@@ -1,0 +1,17 @@
+
+h2 {
+    font-weight: lighter;
+}
+
+.card {
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.btn {
+    margin-bottom: 20px;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}

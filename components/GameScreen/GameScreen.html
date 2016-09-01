@@ -1,0 +1,40 @@
+<section class="row">
+
+    <div class="col s12">
+        <h2>Jeu de carte</h2>
+
+        <p>Nombre de cartes restantes : {{remainingCards}}</p>
+        <p>Score du joueur : {{score}}</p>
+    </div>
+
+    <div class="col s3">
+        <button class="waves-effect waves-light btn" ng-click="pickCard()">
+            Piocher les cartes
+        </button>
+
+        <button class="waves-effect waves-light btn" ng-click="newGame()">
+            Nouveau jeu de cartes
+        </button>
+    </div>
+
+    <div ng-hide="guess" class="col s9">
+        <img ng-show="card1" ng-src="{{card1.image}}" alt="{{card1.valueCard}}" ng-click="choose('card1')">
+        <img ng-show="card2" ng-src="{{card2.image}}" alt="{{card2.valueCard}}" ng-click="choose('card2')">
+        <img ng-show="card3" ng-src="{{card3.image}}" alt="{{card3.valueCard}}" ng-click="choose('card3')">
+
+        <p>Appuie sur une carte pour mélanger et tenter de la retrouver !</p>
+
+    </div>
+
+    <div ng-hide="beginning" class="col s9">
+        <img ng-src="{{place1}}" alt="card-back" ng-click="try('card1')">
+        <img ng-src="{{place2}}" alt="card-back" ng-click="try('card2')">
+        <img ng-src="{{place3}}" alt="card-back" ng-click="try('card3')">
+
+        <p>Devine où est la carte choisie !</p>
+
+    </div>
+
+
+
+</section>
